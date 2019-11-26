@@ -1,0 +1,147 @@
+/*~~~~~GRID~~~~~*/
+main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30% 15% 55%;
+    grid-template-areas:
+        "random search refine"
+        "name name name"
+        "leftInfo flag rightInfo";
+    text-align: center;
+}
+.random{
+    grid-area: random;
+}
+.search{
+    grid-area: search;
+}
+.refine{
+    grid-area: refine;
+}
+.name{
+    grid-area: name;
+    background-color: #114d73;
+    margin-right: -10px;
+    margin-left: -10px;
+    color: white;
+    font-size: 1.5em;
+    margin-top: -25px;
+}
+.leftInfo{
+    grid-area: leftInfo;
+}
+.flag{
+    grid-area: flag;
+}
+.rightInfo{
+    grid-area: rightInfo;
+}
+/*~~~~~GRID~~~~~*/
+
+/*~~~~~GENERAL CSS~~~~~*/
+html{
+    background-color: #f5e689;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.15em;
+}
+
+.random, .search, .refine, .leftInfo, .flag, .rightInfo{
+    padding: 25px;
+}
+#randomButton,#cButton{
+    font-size: 1.5em;
+    background-color: #114d73;
+    color: white;
+    width: 250px;
+    height: 50px;
+}
+#languages{
+    margin-top: 10px;
+    list-style: none;
+    margin-left: -35px;
+}
+#languages li,#boarders li{
+    margin-top: 3px;
+}
+
+.leftInfo,.rightInfo{
+    font-size: 1.25em;
+}
+
+.flag img{
+    width: 100%;
+}
+
+#boarders{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    text-align: left;
+}
+
+h4{
+    margin-bottom: 10px;
+}
+/*~~~~~GENERAL CSS~~~~~*/
+
+/*~~~~~DropDown Menu~~~~~*/
+#menu{
+    position: relative;
+    display: inline-block;
+}
+
+#continents{
+    margin-left: 45px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#continents div:hover {background-color: #ddd;}
+
+#menu:hover #continents {display: block;}
+
+#menu:hover #cButton {background-color: #114d73;}
+
+#options li:hover{color: white;}
+
+#one, #two, #three, #four, #five{
+    color: #402603;
+    margin: 4px;
+    font-size: 1.25em;
+}
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover{
+    color: #db8209;
+    font-size: 1.5em;
+}
+
+.name h1, .name h3{
+    margin: 10px;
+}
+/*~~~~~DropDown Menu~~~~~*/
+
+/* ~~~~~LINKS~~~~~ */
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+a:focus{
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    color: black;
+    font-weight: bold;
+}
+a:active{
+    color: black;
+}
+/* ~~~~~Links~~~~~ */
