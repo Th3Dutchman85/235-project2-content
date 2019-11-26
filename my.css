@@ -113,15 +113,15 @@ h4{
 #one, #two, #three, #four, #five{
     color: #402603;
     margin: 4px;
-    font-size: 1.25em;
+    font-size: .75em;
 }
 #one:hover, #two:hover, #three:hover, #four:hover, #five:hover{
     color: #db8209;
-    font-size: 1.5em;
+    font-size: .8em;
 }
 
 .name h1, .name h3{
-    margin: 10px;
+    margin: 5px;
 }
 /*~~~~~DropDown Menu~~~~~*/
 
@@ -145,3 +145,10 @@ a:active{
     color: black;
 }
 /* ~~~~~Links~~~~~ */
+
+/*For when the screen is real small*/
+@media screen and (max-width: 850px){
+    main{
+        display: block;
+    }
+}
