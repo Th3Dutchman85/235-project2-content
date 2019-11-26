@@ -1,0 +1,20 @@
+With this website I wanted to use the REST api to display a certain countries facts and flag.  This went very well.
+However, I was going to have the boardering countries clickable and be able to navigate that way as well, but after
+making the function to do it I soon realized that I would need to reload the page everytime I searched for a new 
+country.  Which was do-able but it would then mess up with the console logs.  Another error I ran into (the main
+reason this feature was not present) was that the area codes that were clickable sometimes did not have a cooresponding
+country.  So errors were thrown and weird countries were linked to that were not actually boardering the country.  This
+happened because some countries, based on name, had the same three digit code.  So I would need to manually fix all
+them.  That would have been a silly amount of code.  Aside from this however everything else is working fine and as
+expected.  I learned how to do all of this through my IGME 235 course and from the W3C documentation.  In this
+project I used three main sources:
+-The REST api: https: restcountries.eu/
+-Google Fonts: https: fonts.google.com/specimen/EB+Garamond?selection.family=EB+Garamond
+-A picture of earth: https://altered-carbon.fandom.com/wiki/Earth
+
+One of my favorite features is the dropdown menu for locating countries by continent.  I used JavaScript to change the text and
+then I used css to display it.  I really liked this because I thought at the very end this looked very clean and added a lot to
+the page. Thank you for reading and enjoy!
+
+Current Status: Operational and ready for users
+Creator: Lucas Veldman
