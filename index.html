@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countries</title>
+    <link rel="stylesheet" href="css/my.css">
+    <script src="js/javaScript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Input Locations -->
+        <div class="random">
+            <button type="button" id="randomButton" class="green">Random Country</button>
+        </div>
+        <div class="search">
+            <input id="searchterm" type="text" size="30" maxlength="74" autofocus value="Type Country..." />
+            <button type="button" id="submit" class="green">Search</button>
+            <div id="status">Ready to Search!</div>
+        </div>
+        <div class="refine">
+            <div id="menu">
+                <button id="cButton">Refine</button>
+                <div id="continents">
+                    <div id="nAmerica">
+                        N.America
+                    </div>
+                    <div id="sAmerica">
+                        S.America
+                    </div>
+                    <div id="europe">
+                        Europe
+                    </div>
+                    <div id="oceanic">
+                        Oceania 
+                    </div>
+                    <div id="africa">
+                        Africa
+                    </div>
+                    <div id="asia">
+                        Asia
+                    </div>
+                </div>
+            </div>
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+            <div id="four"></div>
+            <div id="five"></div>
+        </div>
+
+        <!-- Information Sections -->
+        <div class="name">
+            <h1>Name</h1>
+            <h3>Capitol</h3>
+        </div>
+        <div class="leftInfo">
+            <div id="population">Population</div>
+            <h4>Languages:</h4>
+            <ul id="languages">
+            </ul>
+        </div>
+        <div class="flag">
+            <img src="/images/earth.jpg" alt="The Countries Flag">
+        </div>
+        <div class="rightInfo">
+            <div id="region">Region</div>
+            <h4>Boarding Countries:</h4>
+            <ul id="boarders">
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
